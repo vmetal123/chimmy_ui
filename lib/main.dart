@@ -48,7 +48,8 @@ class _MyHomePageState extends State<MyHomePage> {
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: <Widget>[
-                  ProfileBlock(icon: Icon(Icons.add, size: 32.0, color: Colors.white)),
+                  ProfileBlock(
+                      icon: Icon(Icons.add, size: 32.0, color: Colors.white)),
                   ProfileBlock(),
                   ProfileBlock(),
                   ProfileBlock(),
@@ -59,6 +60,59 @@ class _MyHomePageState extends State<MyHomePage> {
                   ProfileBlock(),
                   ProfileBlock(),
                 ],
+              ),
+            ),
+            SizedBox(
+              height: 50.0,
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16.0),
+              child: Row(
+                children: <Widget>[
+                  Expanded(
+                    child: Container(
+                      height: 150,
+                      decoration: BoxDecoration(
+                        color: Colors.blue,
+                        borderRadius: BorderRadius.circular(16.0),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 16.0,
+                  ),
+                  Expanded(
+                    child: Container(
+                      height: 150,
+                      decoration: BoxDecoration(
+                        color: Colors.blue,
+                        borderRadius: BorderRadius.circular(16.0),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(height: 16.0,),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 16.0),
+              child: Container(
+                height: 150,
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                  borderRadius: BorderRadius.circular(16.0),
+                ),
+              ),
+            ),
+            SizedBox(height: 16.0,),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 16.0),
+              child: Container(
+                height: 150,
+                decoration: BoxDecoration(
+                  color: Colors.yellow.shade600,
+                  borderRadius: BorderRadius.circular(16.0),
+                ),
               ),
             ),
           ],
